@@ -24,16 +24,13 @@ Built with **Selenium**, **Pandas**, and **OpenPyXL**, this tool extracts detail
 myntra-analyzer/
 │
 ├── data/
-│   ├── Dataset_20k.xlsx          # Sample dataset
+│   ├── Dataset_20k.xlsx          # Sample URL dataset
 │   └── myntra_output_one.xlsx    # Output from scraper
 │
 ├── src/
 │   ├── myntra_scraper_one.py     # Single product scraper
 │   ├── myntra_scraper_bulk.py    # Bulk scraper
 │   └── init.py
-│
-├── tests/
-│   └── test_scraper.py           # Unit tests (pytest)
 │
 ├── requirements.txt              # Dependencies
 ├── .env                          # Environment variables (optional)
