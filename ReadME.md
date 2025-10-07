@@ -110,7 +110,9 @@ dotenv	Environment configuration
 
 📈 Analytics (EDA)
 
+Use Matplotlib or Plotly to visualize pricing trends, discounts, and brand availability.
 You can perform quick exploratory data analysis on the scraped dataset:
+
 ```
 import pandas as pd
 
@@ -121,18 +123,7 @@ print("\nTop 5 Brands:\n", df["Brand"].value_counts().head())
 print("\nAverage Discount:", df["Discount"].mean())
 print("\nTop Sellers:\n", df["Seller"].value_counts().head())
 ```
-💡 Use Matplotlib or Plotly to visualize pricing trends, discounts, and brand availability.
-
-⸻
-
-💡 Future Improvements
-	•	🔁 Add dynamic category-wise scraping
-	•	🧠 Integrate price comparison dashboard
-	•	☁️ Deploy with Streamlit for live insights
-	•	📦 Extend pipeline: CSV → SQLite / PostgreSQL
-
 ---
-
 ⭐ Support
 
 If you found this project helpful, please 🌟 star this repo — your support keeps it growing!
