@@ -55,8 +55,6 @@ def enter_pincode(driver, pincode):
                 el.clear()
                 el.send_keys(pincode)
                 # Try to find a nearby button to apply/check
-                parent = el.find_element(By.XPATH, "./ancestor::form") if True else None
-                # Try typical buttons
                 btn_selectors = [
                     (By.XPATH, "//button[contains(., 'Check')]"),
                     (By.XPATH, "//button[contains(., 'Apply')]"),
@@ -263,7 +261,6 @@ def scrape_one(url, headless=False):
 def main():
     result = scrape_one(URL, headless=False)  # set headless=True if desired
     # Build DataFrame with required columns
-    import pandas as pd
     df = pd.DataFrame([result])  # columns: URL, SellerNames, SellerIDs, Delivery, Status, Notes
     df.to_excel(OUTPUT_XLSX, index=False)
     print(f"Saved results to {OUTPUT_XLSX}")
