@@ -1,5 +1,5 @@
 
-# 🛍️ Myntra Analyzer
+# 🛍️ PriceLens - Myntra Analyzer
 
 A Python-based automation and analytics project to **scrape, clean, and analyze product data from [Myntra](https://www.myntra.com)**.  
 Built with **Selenium**, **Pandas**, and **OpenPyXL**, this tool extracts detailed product insights — including availability, delivery, and seller comparisons — for smarter e-commerce analysis.
